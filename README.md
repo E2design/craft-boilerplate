@@ -1,10 +1,3 @@
 # Craft boilerplate default installation
 
-## Required technology stack
-- something
-- somthing else
-- another thing
-
-## Build instructions
-1. step one
-2. step two
+This is the E2design craft-boilerplate repo. A starting point for all our Craft app developments.
