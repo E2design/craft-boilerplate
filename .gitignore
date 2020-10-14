@@ -1,0 +1,49 @@
+# Craft .gitignore
+#
+# @author    e2services
+# @copyright Copyright (c) 2020 e2services
+# @link      https://e2services.nl/
+
+# CRAFT ENVIRONMENT
+.env.php
+.env.sh
+.env
+
+# COMPOSER
+/vendor
+
+# CRAFT STORAGE
+/craft/storage/*
+/storage/*
+
+# ASSETS
+/public/assets/*
+
+# IMAGER TRANSFORMS
+/public/imager/*
+/web/imager/*
+
+# BUILD FILES
+/bower_components/*
+/node_modules/*
+/build/*
+/yarn-error.log
+
+# MISC FILES
+.DS_Store 
+.cache
+.idea
+.project
+.settings
+*.esproj
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+*.tmproject
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+config.codekit3
+prepos-6.config

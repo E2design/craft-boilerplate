@@ -1,0 +1,17 @@
+dateModified: 1598773338
+email:
+  fromEmail: rob@e2design.nl
+  fromName: craft-boilerplate
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: pro
+  live: true
+  name: craft-boilerplate
+  schemaVersion: 3.5.13
+  timeZone: Europe/Amsterdam
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
