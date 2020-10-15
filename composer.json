@@ -1,4 +1,7 @@
 {
+  "name": "E2design/craft-boilerplate",
+  "description": "A starter Craft install for all E2design projects",
+  "version": "1.0.1",
   "require": {
     "barrelstrength/sprout-encode-email": "^2.0.7",
     "barrelstrength/sprout-fields": "^3.8.3",
