@@ -1,6 +1,6 @@
 {
   "name": "e2design/craft-boilerplate",
-  "description": "A starter Craft install for all E2design projects",
+  "description": "A starter Craft install for all future E2design projects",
   "version": "1.0.3",
   "type": "project",
   "require": {
