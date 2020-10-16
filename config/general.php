@@ -15,6 +15,19 @@ return [
 	// Global settings
     // ------------------------------------------------------------------------------------------
     '*' => [
+        
+        // Craft config settings from .env variables.
+        'aliases'	=> [
+            '@cfUrl'      => getenv('CF_URL'), // Cloudflare Url
+            '@cfId'		  => getenv('CF_ID'), // Cloudflare ID
+            '@cfPrefix'	  => getenv('CF_PATH_PREFIX'), // Cloudflare path prefix
+            '@awsId'	  => getenv('S3_ID'), // S3 ID
+            '@awsSecret'  => getenv('S3_SECRET'), // S3 secret
+            '@web' 		  => getenv('SITE_URL'), // Redefine the dynamically generated @web alias to something that is from a static value for the URL
+            '@webroot'    => getenv('WEB_ROOT_PATH'),
+            '@assetsUrl'  => getenv('ASSETS_URL'), // Url to the assets dir.
+        ],
+        
         // Default: Week Start Day (0 = Sunday, 1 = Monday...)
         'default:WeekStartDay' => 1,
 
@@ -38,7 +51,7 @@ return [
         'sendPoweredByHeader' => false,
 
         // The maximum upload file size allowed.
-        'maxUploadFileSize' => 41943040, // 41943040 = 40 MB, default: 16777216 = 16 MB
+        'maxUploadFileSize' => 50M, // default: 16777216 = 16 MB
         
         // Images quality and cache
         // The quality level Craft will use when saving JPG and PNG files.
@@ -51,15 +64,8 @@ return [
         // Whether Craft should set users’ usernames to their email addresses, rather than let them set their username separately.
         'useEmailAsUsername' => false, // default: false
 
-        // Any custom Yii aliases that should be defined for every request.
-        'aliases'	=> [
-            '@cfUrl'      => getenv('CF_URL'), // Cloudflare Url
-            '@cfId'		  => getenv('CF_ID'), // Cloudflare ID
-            '@cfPrefix'	  => getenv('CF_PATH_PREFIX'), // Cloudflare path prefix
-            '@awsId'	  => getenv('S3_ID'), // S3 ID
-            '@awsSecret'  => getenv('S3_SECRET'), // S3 secret
-            '@web' 		  => getenv('ROOT_URL'), // Redefine the dynamically generated @web alias to something that is from a static value for the URL
-        ],
+        // The number of backups Craft should make before it starts deleting the oldest backups. If set to false, Craft will not delete any backups.
+        'maxBackups' => 2,
 
     ],
 
