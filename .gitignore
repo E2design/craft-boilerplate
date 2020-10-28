@@ -15,13 +15,13 @@
 # CRAFT STORAGE
 /craft/storage/*
 /storage/*
-/public_html/cpresources/*
+/public/cpresources/*
 
 # ASSETS
-/public_html/assets/*
+/public/assets/*
 
 # IMAGER TRANSFORMS
-/public_html/imager/*
+/public/imager/*
 
 # BUILD FILES
 /bower_components/*

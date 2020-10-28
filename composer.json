@@ -7,7 +7,7 @@
     "barrelstrength/sprout-encode-email": "^2.0.7",
     "barrelstrength/sprout-fields": "^3.8.3",
     "craftcms/aws-s3": "^1.2.11",
-    "craftcms/cms": "^3.4.25",
+    "craftcms/cms": "^3.5.10",
     "craftcms/redactor": "^2.7.3",
     "mmikkel/cp-clearcache": "^1.0.7",
     "nystudio107/craft-minify": "^1.2.10",
@@ -18,7 +18,6 @@
     "verbb/super-table": "^2.6.2",
     "vlucas/phpdotenv": "^3.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
-    
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
