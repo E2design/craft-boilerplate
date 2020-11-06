@@ -1,12 +1,58 @@
-dateModified: 1598773338
+dateModified: 1604484037
 email:
   fromEmail: rob@e2design.nl
   fromName: craft-boilerplate
   transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
+  cp-clearcache:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  http2-server-push:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.21
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  sprout-encode-email:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  sprout-fields:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.5.3
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
-  live: true
+  live: false
   name: craft-boilerplate
+  retryDuration: null
   schemaVersion: 3.5.13
   timeZone: Europe/Amsterdam
 users:

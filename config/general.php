@@ -18,14 +18,13 @@ return [
         
         // Craft config settings from .env variables.
         'aliases'	=> [
-            '@cfUrl'      => getenv('CF_URL'), // Cloudflare Url
-            '@cfId'		  => getenv('CF_ID'), // Cloudflare ID
-            '@cfPrefix'	  => getenv('CF_PATH_PREFIX'), // Cloudflare path prefix
-            '@awsId'	  => getenv('S3_ID'), // S3 ID
-            '@awsSecret'  => getenv('S3_SECRET'), // S3 secret
-            '@web' 		  => getenv('SITE_URL'), // Redefine the dynamically generated @web alias to something that is from a static value for the URL
-            '@webroot'    => getenv('WEB_ROOT_PATH'),
-            '@assetsUrl'  => getenv('ASSETS_URL'), // Url to the assets dir.
+            '@cfUrl'      => App::env('CF_URL'), // Cloudflare Url
+            '@cfId'		  => App::env('CF_ID'), // Cloudflare ID
+            '@cfPrefix'	  => App::env('CF_PATH_PREFIX'), // Cloudflare path prefix
+            '@awsId'	  => App::env('S3_ID'), // S3 ID
+            '@awsSecret'  => App::env('S3_SECRET'), // S3 secret
+            '@web' 		  => App::env('SITE_URL'), // Redefine the dynamically generated @web alias to something that is from a static value for the URL
+            '@assetsUrl'  => App::env('ASSETS_URL'), // Url to the assets dir.
         ],
         
         // Default: Week Start Day (0 = Sunday, 1 = Monday...)
@@ -51,7 +50,7 @@ return [
         'sendPoweredByHeader' => false,
 
         // The maximum upload file size allowed.
-        'maxUploadFileSize' => 50M, // default: 16777216 = 16 MB
+        'maxUploadFileSize' => '50M', // default: 16777216 Bytes = 16 MB
         
         // Images quality and cache
         // The quality level Craft will use when saving JPG and PNG files.
@@ -91,7 +90,7 @@ return [
     // Staging environment settings
     'staging' => [
         // Set this to `false` to prevent administrative changes from being made on staging
-        'allowAdminChanges' => true,
+        'allowAdminChanges' => false,
  
          // A variable used in the skeleton layout template to use the HTTP headers
          'addExpiryHeaders'	=> false,
@@ -107,7 +106,7 @@ return [
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
-        'allowAdminChanges' => true,
+        'allowAdminChanges' => false,
 
         // A variable used in the skeleton layout template to use the HTTP headers
         'addExpiryHeaders'	=> true,
