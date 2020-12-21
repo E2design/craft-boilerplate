@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 1fea2856-868d-437e-8097-3e2a983955f2
+handle: caption
+instructions: ''
+name: Bijschrift
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

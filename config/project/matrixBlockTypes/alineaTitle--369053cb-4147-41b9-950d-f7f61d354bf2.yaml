@@ -1,0 +1,391 @@
+field: 9c2f9188-4f0a-4a09-b6c1-a8f4246d5600
+fieldLayouts:
+  6a71c34e-9dd8-4686-9fa0-260ce29bfc64:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8ab442ee-d7c6-4fe0-958f-e60267915d3b
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a534fe2a-1b8e-4c06-ae39-972e038743db
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8ab442ee-d7c6-4fe0-958f-e60267915d3b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: alineaTitleH2
+    instructions: 'Deze alinea titel heeft een h2 HTML tag'
+    name: 'Alinea titel'
+    searchable: false
+    settings:
+      addRowLabel: 'Nieuwe regel'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Inhoud
+                -
+                  - handle
+                  - content
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lettergrootte
+                -
+                  - handle
+                  - textSize
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Standaard
+                        -
+                          - value
+                          - ''
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 24px
+                        -
+                          - value
+                          - .uk-h3
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 20px
+                        -
+                          - value
+                          - .uk-h4
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 15px
+                        -
+                          - value
+                          - .uk-h5
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 14px
+                        -
+                          - value
+                          - .uk-h6
+                        -
+                          - default
+                          - false
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Lettertype dikte'
+                -
+                  - handle
+                  - fontWeight
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dun
+                        -
+                          - value
+                          - .uk-text-light
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Luchtig
+                        -
+                          - value
+                          - .uk-text-normal
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Normaal
+                        -
+                          - value
+                          - .uk-text-400
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dik
+                        -
+                          - value
+                          - .uk-text-bold
+                        -
+                          - default
+                          - false
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - .uk-text-light
+      maxRows: '1'
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  a534fe2a-1b8e-4c06-ae39-972e038743db:
+    contentColumnType: text
+    fieldGroup: null
+    handle: alineaSubtitleH4
+    instructions: 'Facultatief. Als extra regel (ondertitel) onder de alinea titel. Deze alinea ondertitel heeft een h4 HTML tag.'
+    name: 'Alinea ondertitel'
+    searchable: false
+    settings:
+      addRowLabel: 'Nieuwe regel'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Inhoud
+                -
+                  - handle
+                  - content
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lettergrootte
+                -
+                  - handle
+                  - textSize
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Standaard
+                        -
+                          - value
+                          - ''
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 15px
+                        -
+                          - value
+                          - .uk-h5
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 14px
+                        -
+                          - value
+                          - .uk-h6
+                        -
+                          - default
+                          - false
+          -
+            - col4
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Lettertype dikte'
+                -
+                  - handle
+                  - fontWeight
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dun
+                        -
+                          - value
+                          - .uk-text-light
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Luchtig
+                        -
+                          - value
+                          - .uk-text-normal
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Normaal
+                        -
+                          - value
+                          - .uk-text-400
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 'Dik '
+                        -
+                          - value
+                          - .uk-text-bold
+                        -
+                          - default
+                          - false
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Cursief?'
+                -
+                  - handle
+                  - italic
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - lightswitch
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col4
+              - .uk-text-normal
+            -
+              - col3
+              - ''
+      maxRows: '1'
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: alineaTitle
+name: 'Alinea titel'
+sortOrder: 1

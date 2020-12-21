@@ -1,0 +1,259 @@
+field: 27b1d559-bc8d-4309-af2a-b0ec99fd706d
+fieldLayouts:
+  850bbdbd-f8e9-4619-aaff-38ab1cd010e7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d6ffb251-bf79-4c0b-9359-af514151a221
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: db77179a-3c48-4cdf-95d4-6a2a145f7b0f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  d6ffb251-bf79-4c0b-9359-af514151a221:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitleH5
+    instructions: 'Deze sectie titel heeft een h5 HTML tag'
+    name: 'Sectie titel'
+    searchable: false
+    settings:
+      addRowLabel: 'Nieuwe regel'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Inhoud
+                -
+                  - handle
+                  - content
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Lettertype dikte'
+                -
+                  - handle
+                  - fontWeight
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dun
+                        -
+                          - value
+                          - .uk-text-light
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Luchtig
+                        -
+                          - value
+                          - .uk-text-normal
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Normaal
+                        -
+                          - value
+                          - .uk-text-400
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dik
+                        -
+                          - value
+                          - .uk-text-bold
+                        -
+                          - default
+                          - false
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - .uk-text-normal
+      maxRows: '1'
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  db77179a-3c48-4cdf-95d4-6a2a145f7b0f:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionSubtitleH6
+    instructions: ''
+    name: 'Sectie ondertitel'
+    searchable: false
+    settings:
+      addRowLabel: 'Nieuwe regel'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Inhoud
+                -
+                  - handle
+                  - content
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Lettertype dikte'
+                -
+                  - handle
+                  - fontWeight
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dun
+                        -
+                          - value
+                          - .uk-text-light
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Luchtig
+                        -
+                          - value
+                          - .uk-text-normal
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Normaal
+                        -
+                          - value
+                          - .uk-text-400
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dik
+                        -
+                          - value
+                          - .uk-text-bold
+                        -
+                          - default
+                          - false
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Cursief?'
+                -
+                  - handle
+                  - italic
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - lightswitch
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - .uk-text-normal
+            -
+              - col3
+              - ''
+      maxRows: '1'
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: sectionTitle
+name: 'Sectie titel'
+sortOrder: 1

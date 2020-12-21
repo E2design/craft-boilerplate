@@ -1,0 +1,15 @@
+/**
+ * modules/typography.scss
+ * 
+ * Typography rules.
+ *
+ */
+ 
+ // Import the fonts from Goole-fonts as a set and set the default font-family in ./components/variables.scss
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;700&display=swap');
+ 
+// Select the font-family for the h1-h6 selectors
+h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;}
+ 
+// Add the font-weight 400 to UIkit
+.uk-text-400 {font-weight: 400;} 

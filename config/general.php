@@ -55,8 +55,10 @@ return [
         // Images quality and cache
         // The quality level Craft will use when saving JPG and PNG files.
         'default:ImageQuality' => 90, // default: 82
+        
         // The maximum dimension size to use when caching images from external sources to use in transforms. Set to 0 to never cache them.
         'maxCachedCloudImageSize' => 3000, // default: 2000
+        
         // Whether image transforms should be generated before page load.
         'generateTransformsBeforePageLoad' => true, // default: false 
 
@@ -77,7 +79,7 @@ return [
         'addExpiryHeaders'	=> false,
 
         // Whether the site is currently live. If set to true or false, it will take precedence over the System Status setting in Settings → General.
-        'isSystemLive' => false,
+        'isSystemLive' => true,
 
         // Whether front end requests should respond with X-Robots-Tag: none HTTP headers, indicating that pages should not be indexed, and links on the page should not be followed, by web crawlers.
         'disallowRobots' => true,

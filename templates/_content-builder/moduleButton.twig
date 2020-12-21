@@ -1,0 +1,12 @@
+{#-- module button --#}
+{% if module.moduleButton|length %}
+<div class="uk-container {% if entry.containerWidth == 'small' %}uk-container-small{% endif %}">	
+	{% set attributes = {
+	    title: module.moduleButton.customText,
+	    target: '_self',
+	    class: 'uk-button uk-button-default uk-button-large uk-width-auto@s',
+	    "data-uk-icon": 'arrow-right'
+	} %}
+	{{ module.moduleButton.link(attributes) }}
+	{% endif %}
+</div>

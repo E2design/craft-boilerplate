@@ -1,0 +1,23 @@
+enableVersioning: false
+handle: pages
+name: Paginas
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  04d47798-39f0-4608-971a-ac300b6ecf82:
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_router
+    uriFormat: '{slug}'
+type: channel

@@ -1,0 +1,9 @@
+{#-- quote --#}
+{% if module.moduleQuote|length %}
+<div class="uk-container {% if entry.containerWidth == 'small' %}uk-container-small{% endif %}">
+	<blockquote cite="#">
+		<p class="uk-margin-small-bottom">{{ module.moduleQuote }}</p>
+		{% if module.moduleFooter %}<footer>{{ module.moduleFooter}} {% if module.moduleCite %}<cite><a href="{{ module.moduleLink.url }}" target="{{ module.moduleLink.target }}">{{ module.moduleCite }}</a></cite>{% endif %}</footer>{% endif %}
+	</blockquote>
+</div>
+{% endif %}

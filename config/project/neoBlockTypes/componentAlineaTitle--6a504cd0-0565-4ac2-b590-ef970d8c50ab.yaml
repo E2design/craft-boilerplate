@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 8b2979ba-f30e-4ef6-b839-f51667e8e3b4
+fieldLayouts:
+  5768ea13-3969-4115-a199-a07785a12f86:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9c2f9188-4f0a-4a09-b6c1-a8f4246d5600
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: componentAlineaTitle
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Alinea titel'
+sortOrder: 10
+topLevel: true

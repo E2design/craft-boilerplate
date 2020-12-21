@@ -1,0 +1,56 @@
+contentColumnType: string
+fieldGroup: e8a93f6d-c6e7-4850-8022-3976c03571ec
+handle: scheidingslijn
+instructions: 'Selecteer welke scheidingslijn je wilt toepassen'
+name: Scheidingslijn
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Standaard scheidingslijn'
+        -
+          - value
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Scheidingslijn met een icoon'
+        -
+          - value
+          - uk-divider-icon
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Korte scheidingslijn'
+        -
+          - value
+          - uk-divider-small
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Verticale scheidingslijn'
+        -
+          - value
+          - uk-divider-vertical
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

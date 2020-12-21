@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 8b2979ba-f30e-4ef6-b839-f51667e8e3b4
+fieldLayouts:
+  8c599db4-37a5-4092-9953-efc3fd9251a5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 95997cb0-08d1-4a04-b199-1990f010d0c4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: componentDivider
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Scheidingslijn
+sortOrder: 2
+topLevel: true

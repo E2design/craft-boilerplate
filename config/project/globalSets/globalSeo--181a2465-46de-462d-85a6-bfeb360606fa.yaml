@@ -1,0 +1,40 @@
+fieldLayouts:
+  8977013e-deb5-4cca-bebe-c21e5739da6e:
+    tabs:
+      -
+        elements:
+          -
+            style: tip
+            tip: 'Deze SEO informatie verschijnt op iedere pagina als specifieke SEO informatie over die pagina ontbreekt. Het werkt als een vangnet.'
+            type: craft\fieldlayoutelements\Tip
+          -
+            fieldUid: 8f4e193b-2c51-46ee-894c-d4185cb50c64
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 406902c3-14d6-4bb2-86d4-646a90ab0e37
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f61b5399-87da-4bd9-b53d-97f659413b46
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Generieke SEO'
+        sortOrder: 1
+handle: globalSeo
+name: 'SEO instellingen'

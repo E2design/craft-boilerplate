@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 8b2979ba-f30e-4ef6-b839-f51667e8e3b4
+fieldLayouts:
+  45f10d6b-9caf-4908-afae-cd16fc2e4074:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5be0de23-5941-4eb3-a5d6-df6dc7a3cf6b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: componentBlockQuote
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Citaat
+sortOrder: 5
+topLevel: true

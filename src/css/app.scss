@@ -1,0 +1,44 @@
+/* ===========================================================================================*/
+/* ================================  E2design CSS file  ======================================*/
+/* ===========================================================================================*/
+
+// Normalize CSS FIRST
+@import '../node_modules/normalize.css/normalize';
+
+/* ========================== variables & _mixins.scss  ========================================
+ *	stays always on top to hold custom variables for UIkit 
+ * ========================================================================================== */
+
+// 1. Your custom variables and variable overwrites.
+@import './components/variables';
+
+// 2. Import default variables and available mixins.
+@import '../node_modules/uikit/src/scss/variables-theme';
+@import '../node_modules/uikit/src/scss/mixins-theme';
+
+// 3. Your custom mixin overwrites.
+@import'./components/mixins';
+
+// 4. Import UIkit.
+@import '../node_modules/uikit/src/scss/uikit-theme'; 
+
+/* ================================= Components ================================================
+ * Here we add custom component classes; stuff we want loaded
+ * before the utilities so that the utilities can still override them.
+ * Globe ALL files in /path using the *
+ * ========================================================================================== */
+ 
+@import './modules/*';
+
+/* ============================= Third party libs ==============================================
+ * reference third party packages in the node_modules folder with ~name or ~name/path/to/folder 
+ * ========================================================================================== */
+
+
+
+/* ============================== page SASS files ==============================================
+ * reference other SCSS files relative tot the app.scss file (./) 
+ * Globe ALL files in /path using the *
+ * ========================================================================================== */
+
+@import './pages/*';

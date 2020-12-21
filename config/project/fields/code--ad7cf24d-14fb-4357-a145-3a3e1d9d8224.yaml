@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 1fea2856-868d-437e-8097-3e2a983955f2
+handle: code
+instructions: 'Gebruik dit veld om stukjes code te presenteren'
+name: Code
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '6'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

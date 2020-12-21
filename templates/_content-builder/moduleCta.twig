@@ -1,0 +1,8 @@
+{#-- call-to-action #}
+{% if module.moduleCta|length %}
+<div class="uk-container {% if entry.containerWidth == 'small' %}uk-container-small{% endif %} uk-margin">	
+	<div class="uk-alert-warning" uk-alert>
+		<p>{{ module.moduleCta }}</p>
+	</div>
+</div>
+{% endif %}

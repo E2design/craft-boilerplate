@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 8b2979ba-f30e-4ef6-b839-f51667e8e3b4
+fieldLayouts:
+  c0bcf1dc-14b7-45e9-903e-100333248737:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 27b1d559-bc8d-4309-af2a-b0ec99fd706d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: componentSectionTitle
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Sectie titel'
+sortOrder: 11
+topLevel: true

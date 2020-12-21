@@ -1,0 +1,14 @@
+{
+  "name": "codekit-project",
+  "version": "1.0.0",
+  "description": "CodeKit created this starter package.json file.",
+  "scripts": {},
+  "author": "E2services",
+  "license": "UNLICENSED",
+  "repository": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.15.1",
+    "normalize.css": "^8.0.1",
+    "uikit": "^3.5.9"
+  }
+}

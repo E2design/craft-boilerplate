@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 233b1120-3f43-4534-bef0-151f62784c3b
+handle: blockQuote
+instructions: "Een citaat moet tenminste voorzien zijn van de bron (vermelding) en eventueel een bijschrift. \r\n"
+name: Citaat
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_blockquote}}'
+  maxBlocks: '1'
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

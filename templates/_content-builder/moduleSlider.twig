@@ -1,0 +1,30 @@
+{#-- slider --#}
+{% if module.moduleSlider|length %}
+<div class="uk-section">
+	<div class="uk-container uk-light">
+			
+		{% for row in module.moduleSlider.all() %}
+		{% set image = row.sliderPhoto.one() %}
+		{% set optimizedImages = image.optimizedArticleImages %}
+			{% if image|length %}		
+				<picture>
+			        <source srcset="{{ optimizedImages.srcsetWebP() }}" 
+			                sizes="(min-width: 960px) 1200px, 100vw"
+			                type="image/webp"/>
+			        <img data-src="{{ optimizedImages.src() }}"
+			             data-srcset="{{ optimizedImages.srcset() }}"
+			             sizes="(min-width: 960px) 1200px, 100vw"
+						 alt="[photo: {{ siteName }} | {{ entry.title }} ]"  
+						 uk-img
+						 />
+			     </picture>
+				<div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+					<h3 class="uk-margin-remove">{{ row.sliderTitle }}</h3>
+					<p class="uk-margin-remove uk-visible@s">{{ row.sliderBody }}</p>
+				</div>
+			{% endif %}
+		{% endfor %}
+			
+	</div>
+</div>
+{% endif %}

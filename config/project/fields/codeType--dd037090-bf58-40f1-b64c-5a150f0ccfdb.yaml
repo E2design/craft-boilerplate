@@ -1,0 +1,78 @@
+contentColumnType: string
+fieldGroup: e8a93f6d-c6e7-4850-8022-3976c03571ec
+handle: codeType
+instructions: ''
+name: 'Code type'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - HTML
+        -
+          - value
+          - html
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CSS
+        -
+          - value
+          - css
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Javascript
+        -
+          - value
+          - javascript
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - VUE
+        -
+          - value
+          - vue
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Twig
+        -
+          - value
+          - twig
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - ExpressionEngine
+        -
+          - value
+          - expressionengine
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

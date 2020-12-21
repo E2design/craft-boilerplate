@@ -1,0 +1,75 @@
+{#
+ # Error templates
+ # ---------------
+ #
+ # This template is loaded whenever Craft cannot figure out how to
+ # respond to an incoming request.
+ # All error rerquests are sent to the _erros/error router template
+ #}
+
+{% extends "_skeleton/layout" %}
+
+{# ------------------------------------------------------  CUSTOM CSS  ------------------------------------------------------------------- #}
+
+{% block css %}
+{% endblock %}
+
+{# -------------------------------------------------------  VARIABLES  ------------------------------------------------------------------- #}
+
+{# header set to 'true' shows the preloader #}
+{% set preloaderOn = 'true' %}
+
+{% set bodyClass = '' %}
+{% set htmlClass= 'page404' %}
+
+{# --------------------------------------------------------   SEO  ----------------------------------------------------------------------- #}
+
+{% do seomatic.meta.seoTitle(statusCode ~ " " ~ title) %}
+{% do seomatic.meta.seoDescription(errorMessage) %}
+
+{# /////////////////////////////////////////////////////   START PAGE   ////////////////////////////////////////////////////////////////// #}
+
+{% block errorHeader %}
+	{% cache globally using key "header-error" for 4 months %}
+	<header class="header centered">
+	    <div class="container htop">
+	        <div class="row text-center">
+	            <div class="logo">
+	                <a href="/">
+	                	<img class="img-responsive" src="{{ '{asset:9805:url}'|parseRefs }}" {% include '_includes/elements/logo-alt.html' %} height="50" width="265">
+	            	</a>
+	            </div>
+	            <div class="slogan">{{ 'Away from the crowd'|t }}</div>
+	        </div>
+	    </div>
+	</header>	
+	{% endcache %}
+{% endblock %}
+
+{% block content %}
+{% minify %}
+
+{# ///////////////////////////////////////////////////////   CONTENT   /////////////////////////////////////////////////////////////////// #}
+
+<div class="content container text-center">
+    <div class="page-header">
+        <h1>{{ statusCode }} <small>{{ errorMessage }}.</small></h1>
+    </div>
+	<a class="btn btn-primary" href="javascript:history.back()" title="Terug">{{ 'Prev'|t }}</a>&emsp;
+    <a class="btn btn-primary" href="/">Home</a>
+</div>
+
+{# /////////////////////////////////////////////////////   END CONTENT   ///////////////////////////////////////////////////////////////// #}
+
+{% endminify %}
+{% endblock %}
+
+{% block errorFooter %}
+	{% cache globally using key "footer-error" for 4 months %}
+	<footer class="text-center">
+	    <p>{% include '_includes/elements/copyright.html' %} | {% include '_includes/elements/email.html' %} | {% include '_includes/elements/e2services.html' %}</p>
+	</footer>
+	{% endcache %}
+{% endblock %}
+
+{# //////////////////////////////////////////////////////   END PAGE   /////////////////////////////////////////////////////////////////// #}

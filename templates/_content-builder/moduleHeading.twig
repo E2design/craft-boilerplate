@@ -1,0 +1,6 @@
+{#-- heading --#}
+{% if module.moduleHeading|length %}
+<div class="uk-container {% if entry.containerWidth == 'small' %}uk-container-small{% endif %} uk-margin">	
+	<h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">{{module.moduleHeading }}</h2>
+</div>
+{% endif %}

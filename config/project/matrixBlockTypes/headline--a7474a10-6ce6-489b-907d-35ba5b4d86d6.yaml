@@ -1,0 +1,523 @@
+field: 7c737863-69d9-4f38-b813-9bb30cc15966
+fieldLayouts:
+  6a99718e-b340-4817-8704-85771f565698:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d5eff788-87ef-482f-946e-9165f2eb70cd
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 55c8cf99-8125-4209-b3a3-e8a2c2845f67
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  55c8cf99-8125-4209-b3a3-e8a2c2845f67:
+    contentColumnType: text
+    fieldGroup: null
+    handle: headlineSubtitleH3
+    instructions: 'Facultatief. Als extra regel (ondertitel) onder de kopregel. Deze kopregel heeft een h3 HTML tag.'
+    name: 'Kopregel ondertitel'
+    searchable: false
+    settings:
+      addRowLabel: 'Nieuwe regel'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Inhoud
+                -
+                  - handle
+                  - content
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lettergrootte
+                -
+                  - handle
+                  - textSize
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Standaard
+                        -
+                          - value
+                          - ''
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 20px
+                        -
+                          - value
+                          - .uk-h4
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 15px
+                        -
+                          - value
+                          - .uk-h5
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 14px
+                        -
+                          - value
+                          - .uk-h6
+                        -
+                          - default
+                          - false
+          -
+            - col4
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Lettertype dikte'
+                -
+                  - handle
+                  - fontWeight
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dun
+                        -
+                          - value
+                          - .uk-text-light
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Luchtig
+                        -
+                          - value
+                          - .uk-text-normal
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Normaal
+                        -
+                          - value
+                          - .uk-text-400
+                        -
+                          - default
+                          - false
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Cursief?'
+                -
+                  - handle
+                  - italic
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - lightswitch
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col4
+              - .uk-text-light
+            -
+              - col3
+              - ''
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  d5eff788-87ef-482f-946e-9165f2eb70cd:
+    contentColumnType: text
+    fieldGroup: null
+    handle: headlineH1
+    instructions: 'Deze kopregel heeft een h1 HTML tag'
+    name: Kopregel
+    searchable: false
+    settings:
+      addRowLabel: 'Nieuwe regel'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Inhoud
+                -
+                  - handle
+                  - content
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lettergrootte
+                -
+                  - handle
+                  - textSize
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 165px
+                        -
+                          - value
+                          - .uk-heading-2xlarge
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 120px
+                        -
+                          - value
+                          - .uk-heading-xlarge
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 90px
+                        -
+                          - value
+                          - .uk-heading-large
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 60px
+                        -
+                          - value
+                          - .uk-heading-medium
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 48.75px
+                        -
+                          - value
+                          - .uk-heading-small
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - standaard
+                        -
+                          - value
+                          - ''
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 30px
+                        -
+                          - value
+                          - .uk-h2
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 24px
+                        -
+                          - value
+                          - .uk-h3
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 20px
+                        -
+                          - value
+                          - .uk-h4
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 15px
+                        -
+                          - value
+                          - .uk-h5
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - 14px
+                        -
+                          - value
+                          - .uk-h6
+                        -
+                          - default
+                          - false
+          -
+            - col4
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Lettertype dikte'
+                -
+                  - handle
+                  - fontWeight
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dun
+                        -
+                          - value
+                          - .uk-text-light
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Luchtig
+                        -
+                          - value
+                          - .uk-text-normal
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Normaal
+                        -
+                          - value
+                          - .uk-text-400
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Dik
+                        -
+                          - value
+                          - .uk-text-bold
+                        -
+                          - default
+                          - false
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Modificatie
+                -
+                  - handle
+                  - textDivider
+                -
+                  - width
+                  - 10%
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Geen
+                        -
+                          - value
+                          - ''
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Scheidingslijn
+                        -
+                          - value
+                          - .uk-heading-divider
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Bullet
+                        -
+                          - value
+                          - .uk-heading-bullet
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Lijn
+                        -
+                          - value
+                          - .uk-heading-line
+                        -
+                          - default
+                          - false
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col4
+              - .uk-text-light
+            -
+              - col3
+              - ''
+      maxRows: '1'
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: headline
+name: Headline
+sortOrder: 1

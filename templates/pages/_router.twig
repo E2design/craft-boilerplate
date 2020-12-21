@@ -1,0 +1,15 @@
+{% set path404 = '404.html' %}
+{% switch entry.type.handle %}
+
+    {# MAIN PAGES #}
+    {% case "home" %}
+        {% include ['pages/_home', path404] %}
+
+    {% case "pages" %}
+        {% include ['pages/_pages', path404] %}
+
+    {# IF NOTHING WORKS.. #}
+    {% default %}
+        {% include ['pages/_default', path404] %}
+
+{% endswitch %}

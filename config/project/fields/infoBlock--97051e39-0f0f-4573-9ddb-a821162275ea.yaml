@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 233b1120-3f43-4534-bef0-151f62784c3b
+handle: infoBlock
+instructions: "Een informatie blok is een stuk tekst evt. voorzien van een koptekst die wordt weergegeven in een box met een gekleurde achtergrond.\r\nWordt vooral toegepast om informatie extra onder de aandacht te brengen."
+name: 'Informatie blok'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_infoblock}}'
+  maxBlocks: '1'
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

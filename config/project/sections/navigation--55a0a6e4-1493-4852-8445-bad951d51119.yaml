@@ -1,0 +1,26 @@
+enableVersioning: false
+handle: navigation
+name: Menu
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  04d47798-39f0-4608-971a-ac300b6ecf82:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 2d0a0847-d364-4b24-8bb9-fd73be19cb05
+type: structure

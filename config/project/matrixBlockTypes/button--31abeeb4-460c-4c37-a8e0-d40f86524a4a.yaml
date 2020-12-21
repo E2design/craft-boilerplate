@@ -1,0 +1,178 @@
+field: 93e70e01-0109-4af8-b6e6-bf142fe18c2c
+fieldLayouts:
+  10e39817-bc4f-4396-9abf-c5498cdc5837:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ef40846c-105e-48a4-8658-6f8d7f7345ad
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 633bfe48-e677-472a-acc5-7cef4d00d16b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: ef856e95-61b2-4160-8412-6c8955112d3c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+        name: Content
+        sortOrder: 1
+fields:
+  633bfe48-e677-472a-acc5-7cef4d00d16b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonSize
+    instructions: ''
+    name: 'Knop formaat'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Standaard
+            -
+              - value
+              - ''
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Klein
+            -
+              - value
+              - uk-button-small
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groot
+            -
+              - value
+              - uk-button-large
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ef40846c-105e-48a4-8658-6f8d7f7345ad:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonType
+    instructions: 'Kies button type. De tekst en link type zijn reguliere tekst linken, zonder button opmaak.'
+    name: 'Knop type'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Transparante button'
+            -
+              - value
+              - uk-button-default
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Primaire kleur button'
+            -
+              - value
+              - uk-button-primary
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Zwarte button'
+            -
+              - value
+              - uk-button-secondary
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Rode button'
+            -
+              - value
+              - uk-button-danger
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Tekst link'
+            -
+              - value
+              - uk-button-text
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Link [standaard link blauw]'
+            -
+              - value
+              - uk-button-link
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ef856e95-61b2-4160-8412-6c8955112d3c:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: buttonWidth
+    instructions: 'Als de schakelaar actief is wordt de button over de hele breedte van de kolom weergegeven'
+    name: 'Knop breedte'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: button
+name: Knop
+sortOrder: 1

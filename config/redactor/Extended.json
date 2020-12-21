@@ -1,0 +1,28 @@
+{
+	  "buttons": ["html", "formatting", "bold", "italic", "underline", "unorderedlist", "orderedlist", "sup", "link", "table", "image", "video"],
+	  "plugins": ["alignment", "table", "fullscreen", "video"],
+	  "formatting" : ["h1", "h2", "h3", "h4", "p"],
+	  "imageResizable": true,
+	  "imagePosition": true,
+	  "formattingAdd": {
+			"add-note": {
+				"title": "Lead",
+				"api": "module.block.format",
+				"args": {
+					"tag": "p",
+					"class": "uk-text-lead"
+				}
+			},
+			"add-alert": {
+				"title": "Alert",
+				"api": "module.block.format",
+				"args": {
+					"tag": "div",
+					"class": "uk-alert uk-alert-primary"
+				}
+			}
+			
+		},
+	  "linkNewTab": true,
+	  "toolbarFixed": true
+	}

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 26f47072-d125-4e06-bd8e-4b9ff5614dbd
+handle: seoDescription
+instructions: ''
+name: 'SEO beschrijving'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

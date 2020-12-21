@@ -1,0 +1,168 @@
+field: 97051e39-0f0f-4573-9ddb-a821162275ea
+fieldLayouts:
+  2ae73b25-9cc3-420f-8ef6-05bf377ddfc4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3ef9a92b-1843-4646-956a-60279d57c797
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53f18dfd-cdac-427b-89ec-0b19ea73ff76
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fc05a91f-5065-4da7-aa2f-ae151d12db03
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 183634e4-5e62-4998-8236-af300181e95c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+fields:
+  183634e4-5e62-4998-8236-af300181e95c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: styleModifier
+    instructions: 'De kleur van de tekst wordt steeds aangepast aan de achtergrond kleur.'
+    name: 'Achtergrond kleur'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Normaal
+            -
+              - value
+              - ''
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Blauw
+            -
+              - value
+              - uk-alert-primary
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groen
+            -
+              - value
+              - uk-alert-success
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Oranje
+            -
+              - value
+              - uk-alert-warning
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Rood
+            -
+              - value
+              - uk-alert-danger
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  3ef9a92b-1843-4646-956a-60279d57c797:
+    contentColumnType: text
+    fieldGroup: null
+    handle: notice
+    instructions: ''
+    name: Koptekst
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  53f18dfd-cdac-427b-89ec-0b19ea73ff76:
+    contentColumnType: text
+    fieldGroup: null
+    handle: infoBlock
+    instructions: ''
+    name: 'Informatie blok'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fc05a91f-5065-4da7-aa2f-ae151d12db03:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: closeButton
+    instructions: 'Hiermee kunnen bezoekers de box sluiten (verbergen)'
+    name: 'Sluiten knop'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: infoBlock
+name: 'Info blok'
+sortOrder: 1

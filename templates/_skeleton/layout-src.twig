@@ -1,0 +1,116 @@
+{#
+ # Skeleton layout template
+ # ------------------------
+ #
+ # This template defines your site’s global layout.
+ #
+ #}
+
+{# Setting the HTTP headers if addExpiryHeaders == true #}
+{% if craft.app.config.general.addExpiryHeaders %}
+    {% if expiryTime is not defined %}{% set expiryTime = '+1 day' %}{% endif %}
+    {# set expery time per template to override like {% set expiryTime = '+60 mins' %} #}
+
+    {% set expires = now | date_modify(expiryTime) %}
+    {% header "Cache-Control: max-age=" ~ (expires.timestamp - now.timestamp) %}
+    {% header "Pragma: cache" %}
+    {% header "Expires: " ~ expires|date('D, d M Y H:i:s O') %}
+    {% header "X-Remove-Cache-Control: 1" %}
+    {% header "Vary: Accept-Encoding" %}
+    {% header "X-Frame-Options: SAMEORIGIN" %}
+    {% header "X-Xss-Protection: 1; mode=block; always" %}
+    {% header "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload; always" %}
+    {% header "X-Content-Type-Options: nosniff; always" %}
+    {% header "Access-Control-Allow-Origin: *" %}
+{% endif %}
+
+{% spaceless %}
+
+{# -- Prefetch & preconnect headers and links -- #}
+{% set prefetchUrls = [
+    alias("@assetsUrl"),
+] %}
+
+{# -- General global variables -- #}
+{% set baseUrl = alias('@assetsUrl') ~ '/' %}
+
+{% endspaceless %}
+
+<!DOCTYPE html>
+<html lang="{{ craft.app.language|slice(0,2) }}" dir="{{craft.app.i18n.getLocaleById(currentSite.id).getOrientation()}}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+	<head>
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="referrer" content="origin-when-cross-origin" />
+		
+    	{# ================================================== SEO settings ================================================================== #}
+
+		{# Check if the SEOmatic plugin is used if not generate some simple SEO settings as alternative #}
+		{% if not craft.app.plugins.isPluginEnabled('seomatic') %}
+			{# The values are either from the entry or default to the SEO set in the globals SEO #}
+			<title>{{ entry.seoTitle|default(globalSeo.seoTitle ~ ' | ' ~ siteName) }}</title>
+	        <meta name="description" content="{{ entry.seoDescription|default(globalSeo.seoDescription) }}"/>
+	        <meta name="keywords" content="{{ entry.seoKeywords|default(globalSeo.seoKeywords) }}"/>    
+	        
+	        <meta property="og:title" content="{{ entry.seoTitle|default(globalSeo.seoTitle ~ ' | ' ~ siteName) }}"/>
+	        <meta property="og:description" content="{{ entry.seoDescription|default(globalSeo.seoDescription) }}"/>
+		{% endif %}
+						
+		{# ==================================================== Preconnect & Favicons ========================================================== #}
+
+		{% include '_skeleton/boilerplate/preconnect' %}		
+		{% include '_skeleton/boilerplate/favicons' %}
+
+		{# ============================================================  CSS =================================================================== #}
+		
+		<link rel="preload" type="text/css" href="app/css/app.css" crossorigin="anonymous" as="style" onload="this.onload=null; this.rel='stylesheet';">
+		<noscript><link rel="stylesheet" href="app/css/app.css"></noscript>
+		<script src="app/js/app.js" defer></script>	
+
+		{# ====================================== Head JS Any JavaScript that should be included before </head> ================================ #}
+	    
+	    {% include '_skeleton/system/head-js' %}		
+		
+		{# ================================================ Google Analytics =================================================================== #}
+		
+		{% include '_skeleton/system/ga-js' %}
+	
+	</head>
+	
+	{# ///////////////////////////////////////////////////////// CONTENT START ////////////////////////////////////////////////////////////////// #}
+	
+	<body class="{{bodyClass ?? null}} {{craft.app.request.isMobileBrowser() ? 'is-mobile' : 'is-desktop'}}">
+	
+		{% if headerOn is defined and headerOn == true %}
+			{% cache globally using key "header" for 4 weeks %}
+			{% include '_includes/headers/main-header.twig' %}
+			{% endcache %}
+		{% endif %}
+	
+		{%- cache globally using key craft.app.request.pathInfo -%}
+		{%- minify -%}
+			{% block headLinks %}
+			{% endblock headLinks %}
+			{% block content %}
+			{% endblock %}
+			{% include '_includes/headers/off-canvas.twig' %}
+		{%- endminify -%}
+		{%- endcache -%}
+	
+		{% if footerOn is defined and footerOn == true %}
+			{% cache globally using key "page-footer" for 4 weeks %}
+			{% include '_includes/footers/main-footer.twig' %}
+			{% endcache %}
+		{% endif %}
+	
+		{% if scrollToTop is defined and scrollToTop == true %}
+		{% endif %}
+			
+	</body>
+
+	{# ///////////////////////////////////////////////////////// CONTENT END //////////////////////////////////////////////////////////////////// #}
+
+</html>

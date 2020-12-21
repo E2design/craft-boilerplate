@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 233b1120-3f43-4534-bef0-151f62784c3b
+handle: headline
+instructions: 'Dit is de belangrijkste kopregel. Deze kopregel mag maar één keer per pagina voorkomen!'
+name: Headline
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_headline}}'
+  maxBlocks: '1'
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

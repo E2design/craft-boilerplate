@@ -1,0 +1,6 @@
+{#-- body --#}
+{% if module.moduleBody|length %}
+<div class="uk-container {% if entry.containerWidth == 'small' %}uk-container-small{% endif %}">	
+	{{ module.moduleBody }}
+</div>
+{% endif %}

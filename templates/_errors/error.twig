@@ -1,0 +1,61 @@
+{% switch statusCode %}
+
+    {# MAIN ERROR PAGES #}
+    {% case "400" %}
+        {% include '_errors/default' with  {
+	        title: 'Incorrect request'|t ,
+	        errorMessage: 'The server does not understand what you mean'|t
+	        }
+        %}
+
+    {% case "401" %}
+        {% include '_errors/default' with  {
+	        title: 'Unauthorised'|t,
+	        errorMessage: 'You must first log in to be able to open this page'|t 
+	        }
+        %}
+
+    {% case "403" %}
+        {% include '_errors/default' with  {
+	        title: 'Unauthorised'|t,
+	        errorMessage: 'You do not have permission to access this page'|t
+	        }
+        %}
+
+    {% case "404" %}
+        {% include '_errors/default' with  {
+	        title: 'Page Not Found'|t,
+	        errorMessage: 'Too bad, we cannot find this page'|t  
+	        }
+        %}
+
+    {% case "500" %}
+        {% include '_errors/default' with  {
+	        title: 'Internal server error'|t,
+	        errorMessage: 'Something went wrong with the server unexpectedly'|t 
+	        }
+        %}
+
+    {% case "503" %}
+        {% include '_errors/default' with  {
+	        title: 'Site off-line'|t,
+	        errorMessage: 'We are working on the site, please come back later'|t 
+	        }
+        %}
+
+    {% case "505" %}
+        {% include '_errors/default' with  {
+	        title: 'HTTTP version is not supported'|t,
+	        errorMessage: 'The server has problems with the browser that you use'|t 
+	        }
+        %}
+
+    {# IF NOTHING WORKS.. #}
+    {% default %}
+        {% include '_errors/default' with  {
+	        title: 'Unknown error'|t,
+	        errorMessage: 'Strange, this is an unknown error for us'|t 
+	        }
+        %}
+
+{% endswitch %}

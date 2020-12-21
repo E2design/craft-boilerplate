@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 1fea2856-868d-437e-8097-3e2a983955f2
+handle: articlePlain
+instructions: "Een kort tekstvak zonder speciale opmaak. \r\nRegeleinden zijn wel toegestaan gebruik daarvoor de toetscombinatie CTRL + Enter"
+name: 'Platte tekst'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '2'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
