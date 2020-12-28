@@ -1,4 +1,4 @@
-dateModified: 1607601874
+dateModified: 1609158973
 email:
   fromEmail: rob@e2design.nl
   fromName: craft-boilerplate
@@ -28,7 +28,7 @@ plugins:
     schemaVersion: 1.0.0
   hop-reveal:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 1.0.0
     settings:
       controlPanelVisibility: '1'
