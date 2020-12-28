@@ -1,4 +1,4 @@
-dateModified: 1609158973
+dateModified: 1609165335
 email:
   fromEmail: rob@e2design.nl
   fromName: craft-boilerplate
@@ -55,6 +55,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  servd-asset-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   sprout-encode-email:
     edition: standard
     enabled: true
